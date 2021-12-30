@@ -1,8 +1,9 @@
 package me.dio.simulador.draft;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.os.Handler;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import me.dio.simulador.draft.databinding.ActivityMainBinding;
 
@@ -22,14 +23,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupFloatActionButton() {
-        binding.fab.setOnClickListener(view -> {
-
+        binding.fabSimulate.setOnClickListener(view -> {
+            view.animate().rotationBy(360).setDuration(1000).start();
         });
     }
 
     private void setupMatchesRefresh() {
         binding.srlMatches.setOnRefreshListener(() -> {
-
+            new Handler().postDelayed(() -> {
+                binding.srlMatches.setRefreshing(false);
+            }, 1000);
         });
     }
 }
