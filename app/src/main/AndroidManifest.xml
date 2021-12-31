@@ -8,9 +8,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DraftSimulador">
+        android:theme="@style/Theme.App">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.DetailActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

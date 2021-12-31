@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Draft Simulador</string>
 
+    <string name="txt_versus">X</string>
+
     <string name="cd_fab">Botão de sortear resultados.</string>
     <string name="cd_home_team">Imagem do time mandante.</string>
     <string name="cd_away_team">Imagem do time visitante.</string>

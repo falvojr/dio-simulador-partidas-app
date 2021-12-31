@@ -8,6 +8,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,82 +18,85 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/ivMandante"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivHomeTeam"
+                android:layout_width="@dimen/team_rounded_image_diameter"
+                android:layout_height="@dimen/team_rounded_image_diameter"
+                android:layout_marginStart="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
                 android:contentDescription="@string/cd_home_team"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
-                android:id="@+id/tvMandante"
+                android:id="@+id/tvHomeTeamName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/ivMandante"
-                app:layout_constraintStart_toStartOf="@+id/ivMandante"
-                app:layout_constraintTop_toBottomOf="@+id/ivMandante"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeTeam"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeTeam"
+                app:layout_constraintTop_toBottomOf="@+id/ivHomeTeam"
                 tools:text="Time Mandante" />
 
             <TextView
-                android:id="@+id/tvPlacarMandante"
+                android:id="@+id/tvHomeTeamScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="@dimen/default_margin"
+                android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                app:layout_constraintBottom_toBottomOf="@+id/ivMandante"
-                app:layout_constraintStart_toEndOf="@+id/ivMandante"
-                app:layout_constraintTop_toTopOf="@+id/ivMandante"
+                app:layout_constraintBottom_toBottomOf="@+id/ivHomeTeam"
+                app:layout_constraintStart_toEndOf="@+id/ivHomeTeam"
+                app:layout_constraintTop_toTopOf="@+id/ivHomeTeam"
                 tools:text="99" />
 
             <TextView
                 android:id="@+id/tvVersus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/tvPlacarMandante"
-                app:layout_constraintEnd_toStartOf="@+id/tvPlacarVisitante"
-                app:layout_constraintStart_toEndOf="@+id/tvPlacarMandante"
-                app:layout_constraintTop_toTopOf="@+id/tvPlacarVisitante"
-                tools:text="x" />
+                android:gravity="center"
+                android:text="@string/txt_versus"
+                app:layout_constraintBottom_toBottomOf="@+id/tvHomeTeamScore"
+                app:layout_constraintEnd_toStartOf="@+id/tvAwayTeamScore"
+                app:layout_constraintStart_toEndOf="@+id/tvHomeTeamScore"
+                app:layout_constraintTop_toTopOf="@+id/tvAwayTeamScore" />
 
-            <ImageView
-                android:id="@+id/ivVisitante"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAwayTeam"
+                android:layout_width="@dimen/team_rounded_image_diameter"
+                android:layout_height="@dimen/team_rounded_image_diameter"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginEnd="@dimen/default_margin"
                 android:contentDescription="@string/cd_away_team"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
-                android:id="@+id/tvVisitante"
+                android:id="@+id/tvAwayTeamName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/default_margin"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                app:layout_constraintEnd_toEndOf="@+id/ivVisitante"
-                app:layout_constraintStart_toStartOf="@+id/ivVisitante"
-                app:layout_constraintTop_toBottomOf="@+id/ivVisitante"
+                app:layout_constraintEnd_toEndOf="@+id/ivAwayTeam"
+                app:layout_constraintStart_toStartOf="@+id/ivAwayTeam"
+                app:layout_constraintTop_toBottomOf="@+id/ivAwayTeam"
                 tools:text="Time Visitante" />
 
             <TextView
-                android:id="@+id/tvPlacarVisitante"
+                android:id="@+id/tvAwayTeamScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="@dimen/default_margin"
+                android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                app:layout_constraintBottom_toBottomOf="@+id/ivVisitante"
-                app:layout_constraintEnd_toStartOf="@+id/ivVisitante"
-                app:layout_constraintTop_toTopOf="@+id/ivVisitante"
+                app:layout_constraintBottom_toBottomOf="@+id/ivAwayTeam"
+                app:layout_constraintEnd_toStartOf="@+id/ivAwayTeam"
+                app:layout_constraintTop_toTopOf="@+id/ivAwayTeam"
                 tools:text="99" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

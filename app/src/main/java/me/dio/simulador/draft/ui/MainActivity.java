@@ -1,4 +1,4 @@
-package me.dio.simulador.draft;
+package me.dio.simulador.draft.ui;
 
 import android.os.Bundle;
 import android.os.Handler;
