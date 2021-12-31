@@ -5,7 +5,7 @@
       <map>
         <entry key="..\:/Users/falvo/AndroidStudioProjects/DraftSimulador/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/falvo/AndroidStudioProjects/DraftSimulador/app/src/main/res/drawable/ic_simulate.xml" value="0.12395833333333334" />
-        <entry key="..\:/Users/falvo/AndroidStudioProjects/DraftSimulador/app/src/main/res/layout/activity_detail.xml" value="0.2" />
+        <entry key="..\:/Users/falvo/AndroidStudioProjects/DraftSimulador/app/src/main/res/layout/activity_detail.xml" value="0.41210374639769454" />
         <entry key="..\:/Users/falvo/AndroidStudioProjects/DraftSimulador/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/falvo/AndroidStudioProjects/DraftSimulador/app/src/main/res/layout/content_scrolling.xml" value="0.1" />
         <entry key="..\:/Users/falvo/AndroidStudioProjects/DraftSimulador/app/src/main/res/layout/match_item.xml" value="0.536" />
@@ -19,5 +19,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
   </component>
 </project>

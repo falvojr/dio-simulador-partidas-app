@@ -2,8 +2,10 @@
     <string name="app_name">Draft Simulador</string>
 
     <string name="txt_versus">X</string>
+    <string name="txt_default_score">-</string>
 
     <string name="cd_fab">Botão de sortear resultados.</string>
     <string name="cd_home_team">Imagem do time mandante.</string>
     <string name="cd_away_team">Imagem do time visitante.</string>
+    <string name="error_api">Ocorreu um erro ao consumir a API. Verifique sua conexão com a Internet.</string>
 </resources>
