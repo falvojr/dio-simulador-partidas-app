@@ -1,6 +1,7 @@
 package me.dio.simulador.draft.ui.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -13,6 +14,7 @@ import java.util.List;
 
 import me.dio.simulador.draft.databinding.MatchItemBinding;
 import me.dio.simulador.draft.domain.Match;
+import me.dio.simulador.draft.ui.DetailActivity;
 
 /**
  * @see <a href="https://developer.android.com/guide/topics/ui/layout/recyclerview?hl=pt-br">Criar listas dinâmicas com o RecyclerView</a>
@@ -53,6 +55,12 @@ public class MatchesAdapter extends RecyclerView.Adapter<MatchesAdapter.ViewHold
         if (match.getAwayTeam().getScore() != null) {
             viewHolder.binding.tvAwayTeamScore.setText(String.valueOf(match.getAwayTeam().getScore()));
         }
+
+        viewHolder.itemView.setOnClickListener(view -> {
+            Intent intent = new Intent(context, DetailActivity.class);
+            intent.putExtra(DetailActivity.Extras.MATCH, match);
+            context.startActivity(intent);
+        });
     }
 
     @Override

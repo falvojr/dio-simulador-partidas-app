@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Draft Simulador</string>
+    <string name="app_name">Simulador de Partidas</string>
 
     <string name="txt_versus">X</string>
     <string name="txt_default_score">-</string>

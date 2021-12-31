@@ -46,10 +46,10 @@
                 android:id="@+id/tvHomeTeamScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:layout_constraintBottom_toBottomOf="@+id/ivHomeTeam"
+                app:layout_constraintEnd_toStartOf="@+id/tvVersus"
                 app:layout_constraintStart_toEndOf="@+id/ivHomeTeam"
                 app:layout_constraintTop_toTopOf="@+id/ivHomeTeam"
                 tools:text="99" />
@@ -61,8 +61,8 @@
                 android:gravity="center"
                 android:text="@string/txt_versus"
                 app:layout_constraintBottom_toBottomOf="@+id/tvHomeTeamScore"
-                app:layout_constraintEnd_toStartOf="@+id/tvAwayTeamScore"
-                app:layout_constraintStart_toEndOf="@+id/tvHomeTeamScore"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/tvAwayTeamScore" />
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -91,11 +91,11 @@
                 android:id="@+id/tvAwayTeamScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/default_margin"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:layout_constraintBottom_toBottomOf="@+id/ivAwayTeam"
                 app:layout_constraintEnd_toStartOf="@+id/ivAwayTeam"
+                app:layout_constraintStart_toEndOf="@+id/tvVersus"
                 app:layout_constraintTop_toTopOf="@+id/ivAwayTeam"
                 tools:text="99" />
 
